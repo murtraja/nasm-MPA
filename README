@@ -1,0 +1,231 @@
+
+The following repo contains assembly language codes
+for various assignments which were the part of 
+Microprocessor Architecture (MPA) subject for my 
+2nd year. Feel free to refer and update them!
+
+The files were assembled and executed
+in a Linux (Fedora and Ubuntu) 64 based systems
+with Intel microprocessors.
+
+
+Dependencies:
+
+1. nasm ("$ sudo apt-get install nasm" for ubuntu)
+
+
+Execution process:
+
+1. The lazy approach (assuming nasm+ld)
+
+to assemble, link and run file.asm
+$ make file=file.asm
+
+to run a preassembled file.asm
+$ ./file
+
+
+
+Notes: 
+
+1. by default it assembles in 64 bit mode.
+to change that:
+$ make file=file.asm bits=32
+
+2. being lazy, i included
+./$(file) command in the make file
+which is bad practice
+
+3. the additional flags (-g,-F) are for debugging purposes
+
+4. feel free to post an issue in case of any difficulty
+
+
+File List(only checked ones):
+
+accept_10_nos_32.asm
+    
+     program to simply take ten <=8 digit nos
+     and display them
+     32 bit
+    
+
+add_2_32.asm
+    
+     program to add 2 hardcoded
+     8 digit nos and display
+     the result (no carry)
+     32 bit
+    
+
+addressing_modes.asm
+    
+     program to show various
+     addressing modes
+     32 bit
+    
+
+addsub.asm
+    
+     program to compute and display
+     addition and subtraction of two
+     8 digit hardcoded nos (w/o carry)
+     32 bit
+    
+
+andor.asm
+    
+     program to compute and display
+     & and | of two h/c 8 digit nos
+     32 bit
+    
+
+arithmetic.asm
+    
+     program to compute and display
+     *,/,+ and - of 2 h/c 8 digit nos
+     32 bit
+    
+
+arrayadd32.asm
+    
+     program to add 'n' 8 digit nos
+     which are stored in an array (w/o carry)
+     32 bit
+    
+
+ascii.asm
+    
+     program to print a h/c 8 digit no
+     by converting it to ascii
+     32 bit
+    
+
+average.asm
+    
+     program to print the sum and average
+     of 'n' 8 digit nos. in an array
+     32 bit
+    
+
+div_2_32.asm
+    
+     program to compute and display
+     / and % of two h/c 8 digit nos.
+     32 bit
+    
+
+divide_2_32_edx_not_zero.asm
+    
+     program to compute and display
+     / and % of two h/c 8 digit nos
+     w/o setting edx to 0
+     32 bit
+    
+
+gdtr.asm
+    
+     program to display contents
+     of descriptor tables
+     32 bit
+    
+
+hello.asm
+    
+     program to print
+     Hello World
+     32 bit
+    
+
+hello_64.asm
+    
+     program to print
+     Hello World
+     64 bit
+    
+
+max_32.asm
+    
+     program to print the max of given nos
+     32 bit
+    
+
+mul_2_32.asm
+    
+     program to compute and display
+     * of two h/c 8 digit nos
+     32 bit
+    
+
+mul_2_32_lower.asm
+    
+     program to compute * and
+     display only the lower bits
+     32 bit
+    
+
+negpos.asm
+    
+     program to simulate
+     the signum function
+     32 bit
+    
+
+negpos_count.asm
+    
+     program to count and display
+     +ve's, -ve's and 0's
+     32 bit
+    
+
+passwd1.asm
+    
+     program to simulate
+     user login with password
+     32 bit
+    
+
+read.asm
+    
+     program to take console input
+     and display the same (8 char)
+     64 bit
+    
+
+readFile.asm
+    
+     program to display 
+     file info
+     32 bit
+    
+
+stringLen.asm
+    
+     program to compute and display
+     the length of the entered string
+     (max 15 char)
+     32 bit
+    
+
+subtract_2_32.asm
+    
+     program to display -
+     of two 8 digit h/c nos.
+     32 bit
+    
+
+summation.asm
+    
+     program to simply add
+     the 8 digit nos and display
+     32 bit
+    
+
+twoPrint.asm
+    
+     program to print a 
+     2 digit no.
+     32 bit
+    
+
+Total 26 files.
